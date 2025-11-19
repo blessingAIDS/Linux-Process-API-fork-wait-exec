@@ -28,7 +28,6 @@ Test the C Program for the desired output.
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/wait.h>  
 
 int main() {
     int pid = fork();
@@ -36,31 +35,21 @@ int main() {
     if (pid == 0) { 
         printf("I am child, my PID is %d\n", getpid()); 
         printf("My parent PID is: %d\n", getppid()); 
-        sleep(2); 
-    } 
-    else if (pid > 0) { 
+        sleep(2);  // Keep child alive for verification
+    } else { 
         printf("I am parent, my PID is %d\n", getpid()); 
         wait(NULL); 
-    } 
-    else {
-        printf("Fork failed!\n");
-        return 1; // Error in fork
     }
-
-    return 0;
 }
-
 ```
 
 
 ##OUTPUT
-
-<img width="356" height="200" alt="Screenshot 2025-10-18 201312" src="https://github.com/user-attachments/assets/9d423367-2535-4020-a4b2-a8ff609a514e" />
-
-
+<img width="809" height="327" alt="image" src="https://github.com/user-attachments/assets/fbf4b8ea-3faa-445c-bfa4-0c5ffe0a09b4" />
 
 
 ## C Program to execute Linux system commands using Linux API system calls exec() , exit() , wait() family
+
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -73,7 +62,7 @@ int main() {
     
     printf("Running ps with execl\n");
     if (fork() == 0) {
-        execl("ps", "ps", "-f", NULL);
+        execl("/bin/ps", "ps", "-f", NULL);
         perror("execl failed");
         exit(1);
     }
@@ -102,16 +91,14 @@ int main() {
     printf("Done.\n");
     return 0;
 }
-
 ```
 
 
 
 ##OUTPUT
 
-<img width="598" height="287" alt="image" src="https://github.com/user-attachments/assets/5a04a8b5-3645-4e4b-8d2b-38fcc924caaf" />
+<img width="810" height="463" alt="image" src="https://github.com/user-attachments/assets/a8779227-56ed-4a73-a4b9-cfd6a8dbcfae" />
 
 
-
-# RESULT:
+## RESULT:
 The programs are executed successfully.
