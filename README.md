@@ -45,7 +45,7 @@ int main() {
 
 
 ## OUTPUT
-
+![alt text](<Screenshot 2025-11-30 213359.png>)
 
 
 
@@ -96,9 +96,8 @@ int main() {
 
 
 
-##OUTPUT
-
-
+## OUTPUT
+![alt text](<Screenshot 2025-11-30 213444.png>)
 
 
 ## RESULT:
