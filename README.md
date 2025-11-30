@@ -45,7 +45,7 @@ int main() {
 
 
 ## OUTPUT
-<img width="414" height="125" alt="Screenshot 2025-11-30 213359" src="https://github.com/user-attachments/assets/621d45fe-6f90-4ed0-8a83-07c5fbc391bc" />
+
 
 
 
@@ -98,7 +98,6 @@ int main() {
 
 ##OUTPUT
 
-<img width="652" height="298" alt="Screenshot 2025-11-30 213444" src="https://github.com/user-attachments/assets/20fa1e78-97a8-450c-a2f5-4cb12359895b" />
 
 
 
