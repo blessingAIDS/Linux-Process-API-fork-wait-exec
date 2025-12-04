@@ -45,7 +45,7 @@ int main() {
 
 
 ## OUTPUT
-![alt text](Gemini_Generated_Image_pssvocpssvocpssv.png)
+![alt text](ex2.png)
 
 
 
