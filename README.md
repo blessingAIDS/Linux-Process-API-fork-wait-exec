@@ -45,7 +45,7 @@ int main() {
 
 
 ## OUTPUT
-![alt text](<Screenshot 2025-11-30 213359.png>)
+![alt text](Gemini_Generated_Image_pssvocpssvocpssv.png)
 
 
 
@@ -97,7 +97,7 @@ int main() {
 
 
 ## OUTPUT
-![alt text](<Screenshot 2025-11-30 213444.png>)
+![alt text](ex2-1.png)
 
 
 ## RESULT:
